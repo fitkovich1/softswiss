@@ -56,7 +56,6 @@ softswiss/
 │       └── 📁 optimized/     # Оптимизированные изображения
 │   ├── favicon.svg           # Фавиконка
 │   ├── index.html            # HTML шаблон
-│   ├── manifest.json         # PWA манифест
 │   └── robots.txt            # SEO настройки
 │
 ├── 📁 src/                   # Исходный код
