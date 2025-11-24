@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/softswiss/static/css/main.38a49b33.css",
+    "main.js": "/softswiss/static/js/main.a10da91b.js",
+    "static/media/hero-bg.webp": "/softswiss/static/media/hero-bg.5bf7fb876dc8cdb82a01.webp",
+    "static/media/Lato-Regular.ttf": "/softswiss/static/media/Lato-Regular.2b7b7f6c8554ad96436b.ttf",
+    "static/media/Lato-Bold.ttf": "/softswiss/static/media/Lato-Bold.0baf4e4829ca0a3e1e5c.ttf",
+    "static/media/Lato-ExtraBold.ttf": "/softswiss/static/media/Lato-ExtraBold.0d13f4b5f45c14cf4d3c.ttf",
+    "static/media/earth.webp": "/softswiss/static/media/earth.8b4595a32a2389d00fc2.webp",
+    "index.html": "/softswiss/index.html",
+    "main.38a49b33.css.map": "/softswiss/static/css/main.38a49b33.css.map",
+    "main.a10da91b.js.map": "/softswiss/static/js/main.a10da91b.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.38a49b33.css",
+    "static/js/main.a10da91b.js"
+  ]
+}
