@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/softswiss/static/css/main.3b7797bc.css",
+    "main.css": "/softswiss/static/css/main.07ecfb8d.css",
     "main.js": "/softswiss/static/js/main.41b43c19.js",
     "static/media/Lato-Regular.ttf": "/softswiss/static/media/Lato-Regular.2b7b7f6c8554ad96436b.ttf",
     "static/media/Lato-Bold.ttf": "/softswiss/static/media/Lato-Bold.0baf4e4829ca0a3e1e5c.ttf",
     "static/media/Lato-ExtraBold.ttf": "/softswiss/static/media/Lato-ExtraBold.0d13f4b5f45c14cf4d3c.ttf",
-    "static/media/hero-bg.webp": "/softswiss/static/media/hero-bg.f643ec80923cc3088fe6.webp",
+    "static/media/hero-bg.webp": "/softswiss/static/media/hero-bg.f492927c37a5997afdb2.webp",
     "static/media/earth.webp": "/softswiss/static/media/earth.8b4595a32a2389d00fc2.webp",
     "index.html": "/softswiss/index.html",
-    "main.3b7797bc.css.map": "/softswiss/static/css/main.3b7797bc.css.map",
+    "main.07ecfb8d.css.map": "/softswiss/static/css/main.07ecfb8d.css.map",
     "main.41b43c19.js.map": "/softswiss/static/js/main.41b43c19.js.map"
   },
   "entrypoints": [
-    "static/css/main.3b7797bc.css",
+    "static/css/main.07ecfb8d.css",
     "static/js/main.41b43c19.js"
   ]
 }
