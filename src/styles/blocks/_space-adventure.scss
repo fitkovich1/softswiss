@@ -1,0 +1,16 @@
+.space-adventure{
+
+  &__main {
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+
+    @include tablet {
+      gap: 55px;
+    }
+
+    @include mobile {
+      gap: 50px;
+    }
+  }
+}

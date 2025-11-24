@@ -1,0 +1,49 @@
+.btn {
+  @include font-bold;
+  width: max-content;
+  border: none;
+  border-radius: 100px;
+  cursor: pointer;
+  text-decoration: none;
+  display: inline-block;
+  text-align: center;
+  transition: all $trans-base ease-in-out;
+  font-size: $fs-22;
+  line-height: $lh-100;
+
+  &--primary {
+    background: $chartreuse-yellow;
+    color: $black;
+    padding: 14px 40px;
+
+    @include mobile {
+      padding: 7px 40px;
+      font-size: $fs-16;
+      min-height: 33px;
+    }
+
+    &:hover {
+      background: $chartreuse-yellow-hover;
+      transform: translateY(-2px);
+    }
+  }
+
+  &--secondary {
+    background: transparent;
+    color: $chartreuse-yellow;
+    border: 2px solid $chartreuse-yellow;
+    padding: 14px 40px;
+
+    @include mobile {
+      padding: 7px 40px;
+      font-size: $fs-16;
+      min-height: 33px;
+    }
+
+    &:hover {
+      border: 2px solid $chartreuse-yellow-hover;
+      color: $chartreuse-yellow-hover;
+      transform: translateY(-2px);
+    }
+  }
+}

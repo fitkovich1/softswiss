@@ -1,0 +1,187 @@
+@mixin font-regular {
+  font-family: $lato-regular;
+  font-weight: $fw-regular;
+}
+
+@mixin font-bold {
+  font-family: $lato-bold;
+  font-weight: $fw-bold;
+}
+
+@mixin font-extrabold {
+  font-family: $lato-extra-bold;
+  font-weight: $fw-extrabold;
+}
+
+@mixin tablet {
+  @media (max-width: 1248px) {
+    @content;
+  }
+}
+
+@mixin mobile {
+  @media (max-width: 768px) {
+    @content;
+  }
+}
+
+@mixin inheritTextStyles {
+  font-family: inherit;
+  font-weight: inherit;
+  font-size: inherit;
+  line-height: inherit;
+  letter-spacing: inherit;
+}
+
+@mixin heading-1($color: $white, $spanColor: null) {
+  font-family: $lato-extra-bold;
+  font-weight: $fw-extrabold;
+  font-size: $fs-72;
+  line-height: $lh-100;
+  letter-spacing: 0;
+  color: $color;
+
+  @if $spanColor {
+    span {
+      @include inheritTextStyles;
+      color: $spanColor;
+    }
+  }
+
+  @include tablet {
+    font-size: $fs-48;
+  }
+
+  @include mobile {
+    font-size: $fs-36;
+  }
+}
+
+@mixin sub-heading-1($color: $white, $spanColor: null) {
+  font-family: $lato-extra-bold;
+  font-weight: $fw-extrabold;
+  font-size: $fs-32;
+  line-height: $lh-120;
+  letter-spacing: 0;
+  color: $color;
+
+  @if $spanColor {
+    span {
+      @include inheritTextStyles;
+      color: $spanColor;
+    }
+  }
+
+  @include tablet {
+    font-size: $fs-22;
+  }
+
+  @include mobile {
+    font-size: $fs-16;
+  }
+}
+
+@mixin heading-2($color: $white) {
+  font-family: $lato-extra-bold;
+  font-weight: $fw-extrabold;
+  font-size: $fs-74;
+  line-height: $lh-100;
+  letter-spacing: 0;
+  color: $color;
+
+  @include tablet {
+    font-size: $fs-40;
+  }
+}
+
+@mixin sub-heading-2($color: $white) {
+  font-family: $lato-extra-bold;
+  font-weight: $fw-extrabold;
+  font-size: $fs-26;
+  line-height: $lh-120;
+  letter-spacing: 0;
+  color: $color;
+
+  @include tablet {
+    font-size: $fs-16;
+  }
+}
+
+@mixin heading-3($color: $white) {
+  font-family: $lato-extra-bold;
+  font-weight: $fw-extrabold;
+  font-size: $fs-46;
+  line-height: $lh-100;
+  letter-spacing: 0;
+  color: $color;
+
+  @include tablet {
+    font-size: $fs-40;
+  }
+}
+
+@mixin sub-heading-3($color: $white) {
+  font-family: $lato-extra-bold;
+  font-weight: $fw-extrabold;
+  font-size: $fs-24;
+  line-height: $lh-120;
+  letter-spacing: 0;
+  color: $color;
+
+  @include tablet {
+    font-size: $fs-16;
+  }
+}
+
+@mixin blocks-heading($color: $white) {
+  font-family: $lato-extra-bold;
+  font-weight: $fw-extrabold;
+  font-size: $fs-32;
+  line-height: $lh-100;
+  letter-spacing: 0;
+  color: $color;
+
+  @include tablet {
+    font-size: $fs-24;
+  }
+
+  @include mobile {
+    font-size: $fs-18;
+  }
+}
+
+@mixin reset-link {
+  color: inherit;
+  text-decoration: none;
+  background-color: transparent;
+
+  &:hover,
+  &:focus {
+    color: inherit;
+    text-decoration: none;
+  }
+
+  &:active {
+    color: inherit;
+  }
+}
+
+@mixin reset-list-markers {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+@mixin container-max-width_with-media {
+  max-width: calc(100vw - 160px);
+
+  @include tablet {
+    max-width: calc(100vw - 60px);
+  }
+
+  @include mobile {
+    max-width: calc(100vw - 20px);
+  }
+}
+
+

@@ -1,0 +1,33 @@
+.burger {
+  display: none;
+
+  @include mobile {
+    display: block;
+  }
+
+  &__icon {
+    color: $white;
+    cursor: pointer;
+    transition: color $trans-base ease-in-out;
+
+    &:hover {
+      color: $hot-pink;
+    }
+  }
+}
+
+.burger-menu {
+  position: fixed;
+  top: 80px;
+  left: 0;
+  width: 100%;
+  height: $viewport-content-height;
+  background: $black;
+  transform: translateX(-100%);
+  transition: transform $trans-base ease-in-out;
+  z-index: 1000;
+
+  &--active {
+    transform: translateX(0);
+  }
+}

@@ -1,0 +1,85 @@
+.journey{
+  width: 100%;
+  margin: 0 0 60px 0;
+
+  &__container {
+    width: 100%;
+    @include container-max-width_with-media;
+    height: 100%;
+    margin: 0 auto;
+  }
+
+  &__title {
+    width: max-content;
+    margin: 0 0 17px 0;
+    @include blocks-heading($color: $white);
+  }
+
+  &__description, &__more-content > p {
+    @include font-bold;
+    font-size: $fs-20;
+    line-height: $lh-100;
+    letter-spacing: 0;
+    opacity: 0.6;
+    color: $white;
+
+    @include tablet {
+      font-size: $fs-16;
+    }
+
+    @include mobile {
+      font-size: $fs-14;
+    }
+  }
+
+  &__details {
+    display: flex;
+    flex-direction: column;
+
+    &[open] {
+      .journey__read-more-text { display: none; }
+      .journey__read-less-text { display: inline; }
+    }
+
+    &:not([open]) {
+      .journey__read-more-text { display: inline; }
+      .journey__read-less-text { display: none; }
+
+      .journey__more-content {
+        display: none;
+      }
+    }
+  }
+
+  &__summary {
+    order: 2;
+    list-style: none;
+    cursor: pointer;
+    margin-top: 16px;
+
+    > span {
+      color: $chartreuse-yellow;
+      @include font-extrabold;
+      font-size: $fs-20;
+      line-height: $lh-100;
+      letter-spacing: 0;
+      transition: all $trans-base ease-in-out;
+
+      &:hover {
+        color: $chartreuse-yellow-hover;
+      }
+
+      @include tablet {
+        font-size: $fs-16;
+      }
+
+      @include mobile {
+        font-size: $fs-14;
+      }
+    }
+
+    &::-webkit-details-marker {
+      display: none;
+    }
+  }
+}

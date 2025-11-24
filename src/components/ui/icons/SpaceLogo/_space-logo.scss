@@ -1,0 +1,8 @@
+.space__logo {
+  width: 105px;
+  flex-shrink: 0;
+
+  @include tablet {
+    width: 70px;
+  }
+}

@@ -1,0 +1,15 @@
+.header__menu-link-icon {
+  transition: all $trans-base ease-in-out;
+
+  &:hover {
+    path {
+      fill: url(#cartGradient);
+    }
+
+    @include mobile {
+      path {
+        fill: $white;
+      }
+    }
+  }
+}
